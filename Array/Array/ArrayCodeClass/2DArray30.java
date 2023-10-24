@@ -16,7 +16,7 @@ class Demo{
 
 			int y = j;
 
-			while(i<N && j>=0){
+			while(i<M && j>=0){
 			
 				System.out.print(arr[i][y] + " ");
 
