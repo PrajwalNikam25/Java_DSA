@@ -1,8 +1,6 @@
 
 
-
-
-class Clinet{
+class Client{
 
 	public static void main(String[] a){
 	
@@ -13,16 +11,15 @@ class Clinet{
 		int n = arr.length;
 
 		arr2[0] = arr[0];
+		
+		int max = Integer.MIN_VALUE;
 
 		for(int i=1;i<arr.length;i++){
 		
-			int max = Integer.MIN_VALUE;
-		
-			if(arr[i]<arr[i-1]){
+			if(arr[i]>max){
 			
-				max = arr[i-1];
+				max = arr[i];
 			}
-
 			arr2[i] = max;
 		}
 		for(int i=0;i<arr.length;i++){
