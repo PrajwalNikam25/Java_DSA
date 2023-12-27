@@ -33,16 +33,54 @@ class LL{
 			temp.next = newNode;
 		}
 	}
+
+	void print(){
+	
+		Node temp = head;
+
+		while(temp != null){
+		
+			System.out.println(temp.data);
+
+			temp= temp.next;
+		}
+	}
+
+	void SS(){
+	
+		Node temp = head;
+
+		String str= "";
+
+		while(temp != null){
+		
+			str = str + temp.data;
+
+			temp = temp.next;
+		}
+		System.out.println(str);
+
+		int s = Integer.parseInt(str);
+
+		System.out.println(s);
+	}
 }
 class Client{
 
 	public static void main(String[] a){
 	
 		LL obj = new LL();
+		LL obj1 = new LL();
 
-		obj.addNode(10);
-		obj.addNode(20);
-		obj.addNode(30);
-		obj.addNode(40);
+//		obj1.add(1);
+//		obj2.add(2);
+
+
+		obj.addNode(3);
+		obj.addNode(2);
+
+		obj.print();
+
+		obj.SS();
 	}
 }

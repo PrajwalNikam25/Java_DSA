@@ -1,11 +1,11 @@
-
+import java.util.*;
 
 
 class Client{
 
 	public static void main(String[] a){
 	
-		int arr[] = new int[]{-3,6,2,4,5,2,8,-3,3,1};
+		int arr[] = new int[]{-3,6,2,4,5,2,8,-9,3,1};
 
 		int psarr[] = new int[arr.length];
 
@@ -37,6 +37,7 @@ class Client{
 					sum = psarr[e] - psarr[s-1];
 				}
 			}
+			System.out.println(sum);
 		}
 	}
 }
