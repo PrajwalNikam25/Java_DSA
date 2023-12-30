@@ -29,5 +29,6 @@ class SelectionSort{
 		System.out.println(arr[i]);
 	}
 
+	
 	}
 }
