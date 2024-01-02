@@ -52,7 +52,6 @@ class QuickSort{
 		if(start < end){
 
 			int mid = start + (end - start)/2;
-		
 			sort(arr,start,mid);
 			sort(arr,mid+1,end);
 			merge(arr,start,mid,end);
